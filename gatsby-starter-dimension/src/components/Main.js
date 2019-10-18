@@ -22,13 +22,13 @@ class Main extends React.Component {
         style={this.props.timeout ? { display: 'flex' } : { display: 'none' }}
       >
         <article
-          id="intro"
-          className={`${this.props.article === 'intro' ? 'active' : ''} ${
+          id="humanistWeddings"
+          className={`${this.props.article === 'humanistWeddings' ? 'active' : ''} ${
             this.props.articleTimeout ? 'timeout' : ''
           }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">Intro</h2>
+          <h2 className="major">Humanist Weddings</h2>
           <span className="image main">
             <img src={pic01} alt="" />
           </span>
@@ -64,13 +64,13 @@ class Main extends React.Component {
         </article>
 
         <article
-          id="work"
-          className={`${this.props.article === 'work' ? 'active' : ''} ${
+          id="aboutMe"
+          className={`${this.props.article === 'aboutMe' ? 'active' : ''} ${
             this.props.articleTimeout ? 'timeout' : ''
           }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">Work</h2>
+          <h2 className="major">About Me</h2>
           <span className="image main">
             <img src={pic02} alt="" />
           </span>
@@ -87,17 +87,22 @@ class Main extends React.Component {
             I'd love to hear about your inspirations as a couple
             and learn how we can use them to build a unique wedding ceremony for you.
           </p>
+          <p>  
+            I started my career as a teacher of Religious Education and taught about Humanism alongside other faiths.           
+            Teaching instilled in me that planning is everything, 
+            the importance of time keeping to the second and how to write a script that can captivate and hold an audience!
+          </p>
           {close}
         </article>
 
         <article
-          id="about"
-          className={`${this.props.article === 'about' ? 'active' : ''} ${
+          id="unique"
+          className={`${this.props.article === 'unique' ? 'active' : ''} ${
             this.props.articleTimeout ? 'timeout' : ''
           }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">About</h2>
+          <h2 className="major">Make It Unique</h2>
           <span className="image main">
             <img src={pic03} alt="" />
           </span>
@@ -130,6 +135,40 @@ class Main extends React.Component {
             you wish the best for mankind and our planet? Do this through your 
             venue choice, your wedding favours, 
             donations to charities and the inclusion of ethical readings.
+          </p>
+          {close}
+        </article>
+
+        <article
+          id="testimonials"
+          className={`${this.props.article === 'testimonials' ? 'active' : ''} ${
+            this.props.articleTimeout ? 'timeout' : ''
+          }`}
+          style={{ display: 'none' }}
+        >
+          <h2 className="major">Testimonials</h2>
+          <span className="image main">
+            <img src={pic01} alt="" />
+          </span>
+          <p> 
+            Change picture.  Add testimonial text from actual couples.           
+          </p>
+          {close}
+        </article>
+
+        <article
+          id="gallery"
+          className={`${this.props.article === 'gallery' ? 'active' : ''} ${
+            this.props.articleTimeout ? 'timeout' : ''
+          }`}
+          style={{ display: 'none' }}
+        >
+          <h2 className="major">Gallery</h2>
+          <span className="image main">
+            <img src={pic01} alt="" />
+          </span>
+          <p> 
+            Implement a slideshow          
           </p>
           {close}
         </article>
