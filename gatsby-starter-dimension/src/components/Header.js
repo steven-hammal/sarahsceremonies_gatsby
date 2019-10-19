@@ -9,6 +9,7 @@ const Header = (props) => (
         <div className="content">
             <div className="inner">
                 <h1>Sarah's Ceremonies</h1>
+                <h3>Your wedding, your way</h3>
                 <p>
                    My name is Sarah Hammal and I am a trained Humanist UK wedding celebrant. 
                    My work can vary from very traditional wedding ceremonies, to the weird and wonderful. 
