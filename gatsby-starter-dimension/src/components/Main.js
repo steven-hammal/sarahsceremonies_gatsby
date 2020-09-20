@@ -9,8 +9,14 @@ class Main extends React.Component {
   render() {
     let close = (
       <div
+        aria-label="Close Article"
+        role="button"
+        tabIndex="0"
         className="close"
         onClick={() => {
+          this.props.onCloseArticle()
+        }}
+        onKeyDown={() => {
           this.props.onCloseArticle()
         }}
       ></div>
