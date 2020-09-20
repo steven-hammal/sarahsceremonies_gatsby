@@ -2,7 +2,8 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import pic01 from '../images/ceremonyImg.jpg'
 import pic02 from '../images/aboutImg.jpg'
-import pic03 from '../images/michael-prewett-126900-unsplash-min.jpg'
+import pic03 from '../images/personalTaste.jpg'
+import pic04 from '../images/performingCeremony.jpg'
 
 class Main extends React.Component {
   render() {
@@ -33,7 +34,7 @@ class Main extends React.Component {
             <img src={pic01} alt="" />
           </span>
           <p>
-            Humanist weddings are, in a nutshell, completely unique. 
+            <a href="https://humanism.org.uk/">Humanist</a> weddings are, in a nutshell, completely unique. 
             Each ceremony is made specifically for the couple and explores what 
             they want from their celebration so that the couple and their guests 
             have the best day imaginable. 
@@ -48,7 +49,7 @@ class Main extends React.Component {
             enabling the focus to remain on the celebration of the union.
           </p>
           <p>
-            Every humanist wedding is unique but often couples ask what 
+            Every <a href="https://humanism.org.uk/ceremonies/non-religious-weddings/">humanist wedding</a> is unique but often couples ask what 
             the process is and what to expect. It is essential that we 
             meet a few times so that the wedding that I write for you reflects 
             you properly. 
@@ -75,22 +76,25 @@ class Main extends React.Component {
             <img src={pic02} alt="" />
           </span>
           <p>
-            I have lived in Sunderland all my life, 
-            apart from brief forays into the 'Toon'. 
-            I have a fantastic, supportive family and 
-            a little boy who is a source of constant education 
-            about the meaning of love and happiness (and stickiness). 
-            I am happy to travel to locations that fit with your dream wedding 
-            as far as the Lake District and North Yorkshire. 
-            My passions include attempting to bake, 
-            reading graphic novels and horse riding. 
-            I'd love to hear about your inspirations as a couple
-            and learn how we can use them to build a unique wedding ceremony for you.
+            I have lived in Sunderland all my life, apart from brief forays into 
+            the 'Toon'. I have a fantastic, supportive family and two little boys 
+            who are a source of constant education about the meaning of love and 
+            happiness (and stickiness). 
+            I am happy to travel to locations that fit with your dream wedding as 
+            far as the Lake District and North Yorkshire. 
+            My passions include attempting to bake, reading graphic novels, and  
+            I'm currently obsessed with Gardeners World as I renovate the gardens 
+            at our new home. 
+            I'd love to hear about your inspirations as a couple and learn how we 
+            can use them to build a unique wedding ceremony for you.
           </p>
           <p>  
-            I started my career as a teacher of Religious Education and taught about Humanism alongside other faiths.           
-            Teaching instilled in me that planning is everything, 
-            the importance of time keeping to the second and how to write a script that can captivate and hold an audience!
+            I started my career as a teacher of Religious Education and taught 
+            about Humanism alongside other faiths. Teaching instilled in me that 
+            planning is everything, the importance of time keeping to the second 
+            and how to write a script that can captivate and hold an audience! 
+            I love to write and perform unique ceremonies and can't wait to do 
+            my first ceremony in cosplay.
           </p>
           {close}
         </article>
@@ -148,30 +152,42 @@ class Main extends React.Component {
         >
           <h2 className="major">Testimonials</h2>
           <span className="image main">
-            <img src={pic01} alt="" />
+            <img src={pic04} alt="" />
           </span>
           <p> 
-            Change picture.  Add testimonial text from actual couples.           
+            Here are comments <a href="https://humanist.org.uk/sarahhammal/">Humanists UK</a> have received from some 
+            of the fantastic couples I have worked with.
           </p>
-          {close}
-        </article>
+          
+          <p>
+            <i>
+              "Sarah was fantastic. From day one she was very warm and totally understood 
+              the type of service I wanted. It was surprise for my husband and whole family 
+              and Sarah went to extra lengths to make sure it stayed that way. 
+              Everyone commented about the lovely service Sarah conducted and both myself 
+              and my partner thoroughly enjoyed our special day. 
+              Thank you for helping to make such wonderful memories that myself, my partner 
+              and children will cherish forever." 
+            </i> 
+          </p>
 
-        <article
-          id="gallery"
-          className={`${this.props.article === 'gallery' ? 'active' : ''} ${
-            this.props.articleTimeout ? 'timeout' : ''
-          }`}
-          style={{ display: 'none' }}
-        >
-          <h2 className="major">Gallery</h2>
-          <span className="image main">
-            <img src={pic01} alt="" />
-          </span>
-          <p> 
-            Implement a slideshow          
+          <p>
+            <i>
+              "The ceremony exceeded expectations, not just met. 
+              Excellent communication and personalisation throughout the process."
+            </i>
           </p>
+
+          <p>
+            <i>
+              "Sarah was a lovely lady and put our story together perfectly. 
+              Would definitely use her services again and would highly recommend her 
+              to others looking for a Humanist ceremony."
+            </i>
+          </p>
+
           {close}
-        </article>
+        </article>        
 
         <article
           id="contact"
@@ -182,7 +198,7 @@ class Main extends React.Component {
         >
           {/* email handled by https://formspree.io/ without server side requirements.  Free tier allows 50 submissions a month */}
           <h2 className="major">Contact</h2>
-          <form method="post" action="https://formspree.io/xneeokam">
+          <form method="post" action="https://formspree.io/moqpqvyv">
             <div className="field half first">
               <label htmlFor="name">Name</label>
               <input type="text" name="name" id="name" required />

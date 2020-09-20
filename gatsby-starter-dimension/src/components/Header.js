@@ -15,16 +15,27 @@ const Header = (props) => (
                    My work can vary from very traditional wedding ceremonies, to the weird and wonderful. 
                    I love helping a couple craft their experiences into a highly personal ceremony that wows their guests.                   
                 </p>
+                <ul className="icons">
+                    <li>
+                    <a href="https://www.facebook.com/pages/category/Product-Service/Sarahs-Ceremonies-624155291254686/" className="icon fa-facebook">
+                        <span className="label">Facebook</span>
+                    </a>
+                    </li>
+                    <li>
+                    <a href="https://www.instagram.com/sarahshumanistceremonies/" className="icon fa-instagram">
+                        <span className="label">Instagram</span>
+                    </a>
+                    </li>
+                </ul>
             </div>
         </div>
         <nav>
             <ul>
-                <li><a href="javascript:;" onClick={() => {props.onOpenArticle('humanistWeddings')}}>Cermonies</a></li>
-                <li><a href="javascript:;" onClick={() => {props.onOpenArticle('aboutMe')}}>Sarah</a></li>
-                <li><a href="javascript:;" onClick={() => {props.onOpenArticle('unique')}}>Make Yours</a></li>
-                <li><a href="javascript:;" onClick={() => {props.onOpenArticle('testimonials')}}>Testimonials</a></li>
-                <li><a href="javascript:;" onClick={() => {props.onOpenArticle('gallery')}}>Gallery</a></li>
-                <li><a href="javascript:;" onClick={() => {props.onOpenArticle('contact')}}>Contact</a></li>
+                <li><a href="#!" onClick={() => {props.onOpenArticle('humanistWeddings')}}>Cermonies</a></li>
+                <li><a href="#!" onClick={() => {props.onOpenArticle('aboutMe')}}>Sarah</a></li>
+                <li><a href="#!" onClick={() => {props.onOpenArticle('unique')}}>Make It Yours</a></li>
+                <li><a href="#!" onClick={() => {props.onOpenArticle('testimonials')}}>Testimonials</a></li>
+                <li><a href="#!" onClick={() => {props.onOpenArticle('contact')}}>Contact</a></li>
             </ul>
         </nav>
     </header>
