@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: "Sarah's Ceremonies",
-    author: "Hunter Chang",
-    description: "A Gatsby.js V2 Starter based on Dimension by HTML5 UP"
+    author: "Steven Hammal",
+    description: "A business site utilising a Gatsby.js V2 Starter based on Dimension by HTML5 UP"
   },
   plugins: [
     'gatsby-plugin-react-helmet',

@@ -1,9 +1,13 @@
 import PropTypes from 'prop-types'
 import React from 'react'
-import pic01 from '../images/ceremonyImg.jpg'
-import pic02 from '../images/aboutImg.jpg'
-import pic03 from '../images/personalTaste.jpg'
-import pic04 from '../images/performingCeremony.jpg'
+import ceremonyJpeg from '../images/ceremonyImg.jpg' //pic01
+import ceremonyWebp from '../images/ceremonyImg.webp'
+import aboutJpeg from '../images/aboutImg.jpg' //pic02
+import aboutWebp from '../images/aboutImg.webp'
+import personalJpeg from '../images/personalTaste.jpg' //pic03
+import personalWebp from '../images/personalTaste.webp'
+import performingJpeg from '../images/performingCeremony.jpg' //pic04
+import performingWebp from '../images/performingCeremony.webp'
 
 class Main extends React.Component {
   render() {
@@ -37,7 +41,11 @@ class Main extends React.Component {
         >
           <h2 className="major">Humanist Weddings</h2>
           <span className="image main">
-            <img src={pic01} alt="" />
+            <picture>
+              <source type="image/webp" srcSet={ceremonyWebp}></source>
+              <source type="image/jpeg" srcSet={ceremonyJpeg}></source>
+              <img src={ceremonyJpeg} alt="" />
+            </picture>        
           </span>
           <p>
             <a href="https://humanism.org.uk/">Humanist</a> weddings are, in a nutshell, completely unique. 
@@ -79,7 +87,11 @@ class Main extends React.Component {
         >
           <h2 className="major">About Me</h2>
           <span className="image main">
-            <img src={pic02} alt="" />
+            <picture>
+              <source type="image/webp" srcSet={aboutWebp}></source>
+              <source type="image/jpeg" srcSet={aboutJpeg}></source>
+              <img src={aboutJpeg} alt="" />
+            </picture>
           </span>
           <p>
             I have lived in Sunderland all my life, apart from brief forays into 
@@ -114,7 +126,11 @@ class Main extends React.Component {
         >
           <h2 className="major">Make It Unique</h2>
           <span className="image main">
-            <img src={pic03} alt="" />
+            <picture>
+              <source type="image/webp" srcSet={personalWebp}></source>
+              <source type="image/jpeg" srcSet={personalJpeg}></source>
+              <img src={personalJpeg} alt="" />
+            </picture>
           </span>
           <p>
             Some couples like to include within their ceremony 
@@ -158,7 +174,11 @@ class Main extends React.Component {
         >
           <h2 className="major">Testimonials</h2>
           <span className="image main">
-            <img src={pic04} alt="" />
+            <picture>
+              <source type="image/webp" srcSet={performingWebp}></source>
+              <source type="image/jpeg" srcSet={performingJpeg}></source>
+              <img src={performingJpeg} alt="" />
+            </picture>
           </span>
           <p> 
             Here are comments <a href="https://humanist.org.uk/sarahhammal/">Humanists UK</a> have received from some 
